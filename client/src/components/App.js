@@ -1,11 +1,11 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
-import Welcome from './Welcome';
+import Header from './Header';
 
-export default () => {
+export default ( { children } ) => {
 	return (
 		<div>
-			<Route path='/' exact component={ Welcome } />
+			<Header />
+			{ children }
 		</div>
 	);
 }

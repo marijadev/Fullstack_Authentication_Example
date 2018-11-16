@@ -4,6 +4,8 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from '../../actions/index';
 
+import './auth-styles/sign-form.css';
+
 class Signin extends Component {
 
 	onSubmit = formProps => {
@@ -16,7 +18,7 @@ class Signin extends Component {
 		const { handleSubmit } = this.props;
 
 		return (
-			<form onSubmit={ handleSubmit( this.onSubmit ) }>
+			<form className='form' onSubmit={ handleSubmit( this.onSubmit ) }>
 				<fieldset>
 					<label>Email:</label>
 					<Field name='email' component='input' type='email' autoComplete='off' />

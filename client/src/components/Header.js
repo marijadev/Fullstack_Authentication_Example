@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
+import './styles/header-style.css';
 
 class Header extends Component {
 
@@ -9,8 +10,8 @@ class Header extends Component {
 		if ( this.props.authenticated ) {
 			return (
 				<div>
-					<Link to='/signout'>Signout</Link>
-					<Link to='/feature'>Feature</Link>
+					<Link to='/signout'>Sign Out</Link>
+					<Link to='/feature'>Protected</Link>
 				</div>
 			);
 		} else {
@@ -25,8 +26,8 @@ class Header extends Component {
 
 	render() {
 		return (
-			<div>
-				<Link to='/'>Redux Auth</Link>
+			<div className='header'>
+				<Link to='/'>Home</Link>
 				{ this.renderLinks() }
 			</div>
 		);

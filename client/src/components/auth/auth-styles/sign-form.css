@@ -1,0 +1,39 @@
+.form {
+	width: 400px;
+	margin: 30px auto;
+	border: 1px solid black;
+	padding: 20px;
+}
+
+fieldset {
+	border: none;
+}
+
+label {
+	display: inline-block;
+	width: 25%;
+}
+
+input {
+	width: 75%;
+	padding: 5px;
+	outline: none;
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+	border: none;
+	padding: 10px 20px;
+	background-color: darkcyan;
+	font-size: 18px;
+	color: white;
+	transition: all .3s ease;
+	cursor: pointer;
+	outline: none;
+}
+
+button:hover {
+	background-color: goldenrod;
+	outline: none;
+}

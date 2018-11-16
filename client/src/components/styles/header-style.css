@@ -1,0 +1,24 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	padding: 0 30px;
+	background-color: darkcyan;
+}
+
+.header a {
+	margin: 0 10px;
+	font-size: 20px;
+	text-decoration: none;
+	transition: color .3s ease;
+	color: #fff;
+}
+
+.header a:visited {
+	color: #fff;
+}
+
+.header a:hover {
+	color: goldenrod;
+}

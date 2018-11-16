@@ -7,6 +7,7 @@ const morgan = require( 'morgan' );
 const app = express(); // an instance of express
 const router = require( './router' );
 const mongoose = require( 'mongoose' );
+const cors = require( 'cors' );
 
 // DB setup
 mongoose.connect( 'mongodb://localhost:27017/auth', {
@@ -21,6 +22,7 @@ mongoose.connect( 'mongodb://localhost:27017/auth', {
 // morgan and bodyParser are like middlewares in express
 //morgan is a login framework, bodyParser is parsing the data into .json
 app.use( morgan( 'combined' ) );
+app.use( cors() );
 app.use( bodyParser.json( { type: '*/*' } ) );
 router( app );
 
